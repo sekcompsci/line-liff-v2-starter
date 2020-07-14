@@ -220,6 +220,12 @@ function registerButtonHandlers() {
             window.location.reload();
         }
     });
+
+    document.getElementById('downloadFile').addEventListener('click', function() {
+        if (liff.isLoggedIn()) {
+            window.open('https://file-examples-com.github.io/uploads/2017/10/file-sample_150kB.pdf')
+        }
+    });
 }
 
 /**
