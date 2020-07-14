@@ -221,9 +221,15 @@ function registerButtonHandlers() {
         }
     });
 
-    document.getElementById('downloadFile').addEventListener('click', function() {
+    document.getElementById('viewFile').addEventListener('click', function() {
         if (liff.isLoggedIn()) {
             window.open('https://file-examples-com.github.io/uploads/2017/10/file-sample_150kB.pdf')
+        }
+    });
+
+    document.getElementById('downloadFile').addEventListener('click', function() {
+        if (liff.isLoggedIn()) {
+            window.open('https://file-examples-com.github.io/uploads/2017/10/file-sample_150kB.pdf', '_blank')
         }
     });
 }
